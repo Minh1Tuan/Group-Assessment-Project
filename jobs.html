@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+  File:        jobs.html
+  Project:     COS10026 Assessment 2 – Applied Web Project Part 1
+  Company:     Group 2 Assessment (G04 – Educational Technology)
+  Author:      [Your name] ([Student ID])
+  Description: Position descriptions for current vacancies.
+  Acknowledgements:
+    - Page structure and content drafted with help from Claude (Anthropic GenAI), then reviewed and edited by the author.
+    - Salary ranges informed by publicly advertised Australian EdTech roles (e.g. SEEK, 2026).
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Current job vacancies at Group 2 Assessment, an Australian EdTech company building accessible online learning tools.">
+  <meta name="keywords" content="Group 2 Assessment, EdTech jobs, front-end developer, UX designer, accessibility, careers">
+  <meta name="author" content="[Your name]">
+  <title>Careers | Group 2 Assessment</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Embedded CSS (page-specific): styles the reference number badge used only on this page -->
+  <style>
+    .ref-badge {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #FFF4E0;
+      border: 1px solid #C77700;
+      padding: 0.1em 0.45em;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Skip link lets keyboard and screen reader users jump past the menu -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <p class="brand"><a href="index.html">Group 2 Assessment</a></p>
+    <!-- Common navigation menu (same on every page) -->
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html" aria-current="page">Jobs</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="jobs-page">
+    <h1>Join Our Team</h1>
+    <figure class="jobs-banner">
+      <img src="images/jobs-banner.svg" width="1100" height="300"
+           alt="Illustration of students learning on laptops and tablets with a Group 2 Assessment dashboard">
+      <figcaption>Our tools support more than 200 schools and TAFEs across Australia.</figcaption>
+    </figure>
+    <p class="intro">
+      Group 2 Assessment builds online learning tools for schools and TAFEs across Australia.
+      We want every learner, whatever their ability or background, to be able to use our platforms.
+      We are hiring for the roles below.
+    </p>
+
+    <!-- Aside: floated right at 25% width (see styles.css, JOBS PAGE section) -->
+    <aside class="jobs-aside" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Group 2 Assessment?</h2>
+      <ul>
+        <li>Hybrid work: 3 days from home</li>
+        <li>$1,500 yearly learning budget</li>
+        <li>Paid volunteer leave</li>
+        <li>Employer super contribution of 12%</li>
+      </ul>
+      <h3>How to apply</h3>
+      <ol>
+        <li>Note the job reference number.</li>
+        <li>Complete our <a href="apply.html">online application</a>.</li>
+        <li>We will reply within 10 business days.</li>
+      </ol>
+    </aside>
+
+    <!-- ===== Job 1 ===== -->
+    <section class="job" id="job-FED26" aria-labelledby="job1-title">
+      <h2 id="job1-title">Front-End Web Developer</h2>
+      <dl class="job-meta">
+        <dt>Reference number</dt>
+        <dd><span class="ref-badge">FED26</span></dd>
+        <dt>Salary</dt>
+        <dd>$95,000 – $115,000 + super</dd>
+        <dt>Reports to</dt>
+        <dd>Head of Engineering</dd>
+        <dt>Location</dt>
+        <dd>Melbourne (Hawthorn), hybrid</dd>
+      </dl>
+      <img class="job-image" src="images/frontend-developer.svg" width="240" height="160"
+           alt="Illustration of a code editor next to a responsive web page on a phone">
+      <p>
+        Build and maintain the student-facing parts of our learning platform, LearnLoop.
+        You will turn designs into fast, accessible pages that work on any device, including
+        the older laptops and low-bandwidth connections many of our schools rely on.
+      </p>
+
+      <section class="job-detail">
+        <h3>Key responsibilities</h3>
+        <ul>
+          <li>Develop responsive interfaces using semantic HTML5 and modern CSS.</li>
+          <li>Make sure new features meet WCAG 2.2 level AA.</li>
+          <li>Work with designers and teachers to improve lesson and quiz pages.</li>
+          <li>Review code and write documentation for the front-end team.</li>
+          <li>Fix bugs reported by students, teachers and school IT staff.</li>
+        </ul>
+      </section>
+
+      <section class="job-detail">
+        <h3>Requirements</h3>
+        <h4>Essential</h4>
+        <ol>
+          <li>2+ years of professional front-end development experience.</li>
+          <li>Strong HTML5, CSS3 and JavaScript skills.</li>
+          <li>Working knowledge of web accessibility and testing tools (e.g. WAVE, axe).</li>
+          <li>Experience using Git and an agile tool such as Jira.</li>
+        </ol>
+        <h4>Preferable</h4>
+        <ul>
+          <li>Experience with React or Vue.</li>
+          <li>Knowledge of learning management systems such as Moodle or Canvas.</li>
+          <li>A degree in IT, Computer Science or a related field.</li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- ===== Job 2 ===== -->
+    <section class="job" id="job-UXD42" aria-labelledby="job2-title">
+      <h2 id="job2-title">UX &amp; Accessibility Designer</h2>
+      <dl class="job-meta">
+        <dt>Reference number</dt>
+        <dd><span class="ref-badge">UXD42</span></dd>
+        <dt>Salary</dt>
+        <dd>$100,000 – $120,000 + super</dd>
+        <dt>Reports to</dt>
+        <dd>Lead Product Designer</dd>
+        <dt>Location</dt>
+        <dd>Melbourne (Hawthorn), hybrid</dd>
+      </dl>
+      <img class="job-image" src="images/ux-designer.svg" width="240" height="160"
+           alt="Illustration of wireframe sketches with an accessibility symbol">
+      <p>
+        Design learning experiences that are simple, inclusive and enjoyable. You will research
+        how students and teachers use our tools, then design and test improvements with them,
+        including learners who use screen readers and other assistive technology.
+      </p>
+
+      <section class="job-detail">
+        <h3>Key responsibilities</h3>
+        <ul>
+          <li>Plan and run user research with students, teachers and parents.</li>
+          <li>Create wireframes, prototypes and final designs in Figma.</li>
+          <li>Keep our design system's colours, type and components accessible.</li>
+          <li>Run accessibility reviews before each release.</li>
+        </ul>
+      </section>
+
+      <section class="job-detail">
+        <h3>Requirements</h3>
+        <h4>Essential</h4>
+        <ol>
+          <li>3+ years of experience in UX or product design.</li>
+          <li>A portfolio showing your research and design process.</li>
+          <li>Sound knowledge of WCAG and inclusive design.</li>
+          <li>Clear written and spoken communication.</li>
+        </ol>
+        <h4>Preferable</h4>
+        <ul>
+          <li>Experience designing for education or young people.</li>
+          <li>Basic HTML and CSS skills.</li>
+          <li>A current Working with Children Check.</li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- Aboriginal and Torres Strait Islander inclusive employment statement (required site element) -->
+    <section class="inclusion" aria-labelledby="inclusion-title">
+      <h2 id="inclusion-title">Inclusive Employment</h2>
+      <p>
+        Group 2 Assessment acknowledges the Wurundjeri Woi-wurrung people of the Kulin Nation,
+        the Traditional Owners of the land where our office stands, and pays respect to Elders past and present.
+      </p>
+      <p>
+        We strongly encourage Aboriginal and Torres Strait Islander people to apply for these roles.
+        Our tools are used by First Nations students in schools across Australia, and we believe
+        our team should reflect and understand the communities we serve. We are happy to discuss
+        flexible arrangements for cultural and community obligations.
+      </p>
+      <!-- Inline CSS example -->
+      <p style="font-style: italic;">
+        We include this statement because learning tools built without First Nations voices can leave First Nations learners behind.
+      </p>
+    </section>
+  </main>
+
+  <!-- Common footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Group 2 Assessment. Contact: <a href="mailto:105943126@student.swin.edu.au">105943126@student.swin.edu.au</a></p>
+  </footer>
+</body>
+</html>

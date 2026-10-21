@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" width="1100" height="300">
+  <title>Students learning on laptops and tablets</title>
+  <!-- Background -->
+  <rect width="1100" height="300" fill="#0B5C6B"/>
+  <circle cx="980" cy="40" r="140" fill="#0E6F80"/>
+  <circle cx="80" cy="290" r="120" fill="#09505D"/>
+  <!-- Heading text -->
+  <text x="60" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="bold" fill="#FFFFFF">Careers at Group 2 Assessment</text>
+  <text x="60" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FFE2B3">Build learning tools that work for everyone</text>
+  <!-- Laptop -->
+  <rect x="640" y="90" width="260" height="160" rx="10" fill="#F2F7F8"/>
+  <rect x="655" y="105" width="230" height="130" fill="#FFFFFF"/>
+  <rect x="670" y="120" width="90" height="12" rx="3" fill="#0B5C6B"/>
+  <rect x="670" y="145" width="200" height="8" rx="3" fill="#C9DDE1"/>
+  <rect x="670" y="162" width="170" height="8" rx="3" fill="#C9DDE1"/>
+  <rect x="670" y="185" width="60" height="35" rx="4" fill="#C77700"/>
+  <rect x="740" y="185" width="60" height="35" rx="4" fill="#5BA4B0"/>
+  <rect x="810" y="185" width="60" height="35" rx="4" fill="#0B5C6B"/>
+  <path d="M610 250 H930 L910 268 H630 Z" fill="#D7E4E7"/>
+  <!-- Tablet -->
+  <rect x="940" y="140" width="110" height="140" rx="10" fill="#F2F7F8"/>
+  <rect x="950" y="152" width="90" height="112" fill="#FFFFFF"/>
+  <circle cx="995" cy="190" r="22" fill="#FFE2B3"/>
+  <path d="M985 190 l8 8 l14 -16" stroke="#0B5C6B" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <rect x="962" y="225" width="66" height="8" rx="3" fill="#C9DDE1"/>
+  <rect x="962" y="241" width="48" height="8" rx="3" fill="#C9DDE1"/>
+</svg>

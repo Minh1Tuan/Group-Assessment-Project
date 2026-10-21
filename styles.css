@@ -1,0 +1,239 @@
+/*
+  File:    styles.css
+  Project: COS10026 Assessment 2 – Group 2 Assessment
+  Order:   shared styles, jobs.html styles, responsive rules
+*/
+
+/* ===== SHARED: colours and base ===== */
+
+/* Colour variables (all pass WCAG AA contrast) */
+:root {
+  --primary: #0B5C6B;
+  --dark: #073F4A;
+  --accent: #C77700;
+}
+
+/* Universal selector: width includes padding and border */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.6 "Segoe UI", Arial, sans-serif;
+  color: #1E1E1E;
+  background-color: #FFFFFF;
+}
+
+/* Grouped selector: headings and links share the teal colour */
+h1, h2, h3, h4, a {
+  color: var(--primary);
+}
+
+/* Accessibility: visible outline for keyboard users */
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Skip link: hidden off-screen until focused */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  padding: 0.5rem 1rem;
+  background-color: var(--dark);
+  color: #FFFFFF;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* ===== SHARED: header, menu and footer ===== */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Descendant selector: white links in the header */
+.site-header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Child selector: the list directly inside nav */
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: var(--dark);
+}
+
+/* Attribute selector: highlights the current page */
+nav a[aria-current="page"] {
+  background-color: #FFFFFF;
+  color: var(--primary);
+}
+
+.site-footer {
+  clear: both;
+  padding: 1rem;
+  background-color: var(--dark);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #FFFFFF;
+}
+
+/* ===== JOBS PAGE (jobs.html) ===== */
+
+/* ID selector: centre the page content */
+#main.jobs-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+}
+
+/* Required: aside floated right, 25% width, margin, padding and border */
+.jobs-aside {
+  float: right;
+  width: 25%;
+  margin: 0 0 1.5rem 1.5rem;
+  padding: 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background-color: #FFF9EF;
+}
+
+/* Remove the gap above the first heading in each box */
+.jobs-aside h2,
+.job h2,
+.inclusion h2 {
+  margin-top: 0;
+}
+
+/* Job card: overflow stops it sliding under the floated aside */
+.job {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 6px solid var(--primary);
+  background-color: #F2F7F8;
+}
+
+/* Job details as a two-column grid: label | value */
+.job-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+}
+
+.job-meta dt {
+  font-weight: bold;
+}
+
+.job-meta dd {
+  margin: 0;
+}
+
+.job-detail h3 {
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Pseudo-class: stripe every second list item */
+.job-detail ul li:nth-child(even) {
+  background-color: #E4EFF1;
+}
+
+/* Pseudo-element: amber triangle before each h4 */
+.job-detail h4::before {
+  content: "\25B8 ";
+  color: var(--accent);
+}
+
+/* Images shrink to fit small screens */
+.jobs-banner img,
+.job-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.jobs-banner {
+  margin: 0 0 1.5rem;
+}
+
+.jobs-banner figcaption {
+  font-size: 0.9rem;
+  color: #4A4A4A;
+}
+
+.job-image {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+/* Inclusive employment statement */
+.inclusion {
+  clear: both;
+  padding: 1.25rem 1.5rem;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets and phones: stop floating, stack the header */
+@media screen and (max-width: 768px) {
+  .jobs-aside,
+  .job-image {
+    float: none;
+    width: auto;
+    margin: 0 0 1.5rem;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Small phones: job details in one column */
+@media screen and (max-width: 480px) {
+  .job-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Accessibility: respect the reduced-motion setting */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

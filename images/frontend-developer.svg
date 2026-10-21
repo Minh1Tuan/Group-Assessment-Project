@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160">
+  <title>Code editor next to a responsive web page on a phone</title>
+  <rect width="240" height="160" fill="#E4EFF1"/>
+  <!-- Code editor window -->
+  <rect x="16" y="20" width="150" height="120" rx="6" fill="#073F4A"/>
+  <circle cx="28" cy="32" r="4" fill="#E06C5A"/>
+  <circle cx="40" cy="32" r="4" fill="#F2B544"/>
+  <circle cx="52" cy="32" r="4" fill="#6CC28A"/>
+  <text x="26" y="62" font-family="Courier New, monospace" font-size="13" fill="#FFE2B3">&lt;main&gt;</text>
+  <rect x="40" y="72" width="80" height="6" rx="2" fill="#5BA4B0"/>
+  <rect x="40" y="86" width="100" height="6" rx="2" fill="#9CCAD2"/>
+  <rect x="40" y="100" width="64" height="6" rx="2" fill="#5BA4B0"/>
+  <text x="26" y="126" font-family="Courier New, monospace" font-size="13" fill="#FFE2B3">&lt;/main&gt;</text>
+  <!-- Phone -->
+  <rect x="180" y="30" width="46" height="96" rx="7" fill="#1E1E1E"/>
+  <rect x="185" y="40" width="36" height="74" fill="#FFFFFF"/>
+  <rect x="189" y="45" width="28" height="8" rx="2" fill="#0B5C6B"/>
+  <rect x="189" y="58" width="28" height="18" rx="2" fill="#C77700"/>
+  <rect x="189" y="81" width="28" height="5" rx="2" fill="#C9DDE1"/>
+  <rect x="189" y="91" width="20" height="5" rx="2" fill="#C9DDE1"/>
+</svg>

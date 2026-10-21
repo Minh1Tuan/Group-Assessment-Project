@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160">
+  <title>Wireframe sketches with an accessibility symbol</title>
+  <rect width="240" height="160" fill="#FFF4E0"/>
+  <!-- Wireframe 1 -->
+  <rect x="16" y="22" width="90" height="116" rx="6" fill="#FFFFFF" stroke="#0B5C6B" stroke-width="2"/>
+  <rect x="26" y="32" width="70" height="30" fill="none" stroke="#5BA4B0" stroke-width="2" stroke-dasharray="4 3"/>
+  <line x1="26" y1="32" x2="96" y2="62" stroke="#5BA4B0" stroke-width="1.5"/>
+  <line x1="96" y1="32" x2="26" y2="62" stroke="#5BA4B0" stroke-width="1.5"/>
+  <rect x="26" y="72" width="70" height="6" rx="2" fill="#C9DDE1"/>
+  <rect x="26" y="84" width="54" height="6" rx="2" fill="#C9DDE1"/>
+  <rect x="26" y="108" width="40" height="18" rx="4" fill="#C77700"/>
+  <!-- Wireframe 2 -->
+  <rect x="116" y="22" width="60" height="116" rx="6" fill="#FFFFFF" stroke="#0B5C6B" stroke-width="2"/>
+  <rect x="124" y="32" width="44" height="8" rx="2" fill="#0B5C6B"/>
+  <rect x="124" y="48" width="44" height="6" rx="2" fill="#C9DDE1"/>
+  <rect x="124" y="60" width="34" height="6" rx="2" fill="#C9DDE1"/>
+  <rect x="124" y="74" width="44" height="14" rx="3" fill="none" stroke="#5BA4B0" stroke-width="2"/>
+  <rect x="124" y="94" width="44" height="14" rx="3" fill="none" stroke="#5BA4B0" stroke-width="2"/>
+  <!-- Accessibility symbol -->
+  <circle cx="208" cy="80" r="24" fill="#0B5C6B"/>
+  <circle cx="208" cy="67" r="4" fill="#FFFFFF"/>
+  <path d="M194 75 H222 M208 75 V89 M208 89 L200 101 M208 89 L216 101" stroke="#FFFFFF" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+</svg>
