@@ -237,3 +237,10 @@ nav a[aria-current="page"] {
     animation: none !important;
   }
 }
+
+.brand img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
