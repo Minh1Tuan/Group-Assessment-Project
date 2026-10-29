@@ -1,0 +1,140 @@
+/* index.css - homepage styles (load after styles.css) */
+
+/* Page container */
+#main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 2rem;
+  }
+  
+  #main-content > section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Hero with CSS-only background graphic */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    background-color: #E8F3F5;
+    background-image:
+      radial-gradient(circle at 12% 18%, rgba(199, 119, 0, 0.18) 0 60px, transparent 61px),
+      radial-gradient(circle at 92% 85%, rgba(11, 92, 107, 0.15) 0 120px, transparent 121px),
+      repeating-radial-gradient(circle at 85% 15%, rgba(11, 92, 107, 0.10) 0 4px, transparent 4px 22px),
+      linear-gradient(135deg, #F2F7F8 0%, #D5EAEE 100%);
+  }
+  
+  /* Hero text panel */
+  .hero-text {
+    flex: 1 1 320px;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  
+  /* Slogan */
+  .slogan {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--dark);
+  }
+  
+  /* Hero image */
+  .hero-image {
+    flex: 1 1 320px;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Button link */
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--dark);
+    border-radius: 6px;
+    background-color: var(--dark);
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .button:hover,
+  .button:focus-visible {
+    background-color: #FFFFFF;
+    color: var(--dark);
+  }
+  
+  /* Acknowledgement of Country */
+  .acknowledgement {
+    padding: 1.25rem 1.5rem;
+    border-left: 6px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    background-color: #FFF9EF;
+  }
+  
+  .acknowledgement h2 {
+    margin-top: 0;
+  }
+  
+  /* Table wrapper (scrolls on small screens) */
+  .positions {
+    overflow-x: auto;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  caption {
+    padding-bottom: 0.5rem;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Table cells and borders */
+  th, td {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--primary);
+    text-align: left;
+  }
+  
+  /* Table header row */
+  thead th {
+    background-color: var(--primary);
+    color: #FFFFFF;
+  }
+  
+  /* Merged team cells (rowspan) */
+  tbody th[scope="rowgroup"] {
+    background-color: #E4EFF1;
+    vertical-align: top;
+  }
+  
+  /* Striped rows */
+  tbody tr:nth-child(even) td {
+    background-color: #F2F7F8;
+  }
+  
+  /* Merged footer cell (colspan) */
+  tfoot td {
+    background-color: var(--dark);
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Small phones */
+  @media screen and (max-width: 480px) {
+    th, td {
+      padding: 0.4rem 0.5rem;
+      font-size: 0.9rem;
+    }
+  }

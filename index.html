@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<!--
+  File:        index.html
+  Project:     COS10026 Assessment 2 – Applied Web Project Part 1
+  Company:     Group 2 Assessment (G04 – Educational Technology)
+  Author:      Tran Dang Le Quan (106215761)
+  Description: Homepage introducing LearnLoop, with company logo, name, slogan,
+               description, hero image, open positions table and job search box.
+  Acknowledgements:
+    - Page structure and content drafted with help from Claude Sonnet 5.5 (Anthropic GenAI), then reviewed and edited by the author.
+    - Company details (LearnLoop, Melbourne studio, open positions) are fictional and created for this assignment.
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +17,21 @@
     <meta name="description" content="Join LearnLoop, an EdTech company building accessible and inclusive online learning tools. Explore careers for web developers and designers.">
     <meta name="keywords" content="LearnLoop, EdTech, education technology, careers, jobs, web developer, web designer, accessible learning, inclusive education, online learning, recruitment">
     <meta name="author" content="Tran Dang Le Quan">
-    <title>LearnLoop | Careers in Accessible EdTech</title>
+    <title>LearnLoop</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="images/favicon.jpg">
+
+    <style>
+        /* Embedded CSS: homepage-only heading size */
+        .hero h1 { font-size: 2.5rem; margin-top: 0; }
+    </style>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
         <p class="brand">
-            <img src="images/brandicon.png" alt="LearnLoop logo">
+            <img src="images/brandicon.png" alt="LearnLoop logo" >
         </p>
         <nav>
             <ul>
@@ -38,16 +56,9 @@
                 </p>
                 <a class="button" href="jobs.html">View Open Positions</a>
             </div>
-            <img class="hero-image" src="images/hero.jpg" alt="Students of different ages using laptops and tablets in a bright classroom.">
+            <img class="hero-image" src="images/background_kids.png" alt="Students of different ages using laptops and tablets in a bright classroom.">
         </section>
 
-        <!-- About us section -->
-        <section class="about" id="about">
-            <h2>About Us</h2>
-            <p>
-                Founded in 2019, LearnLoop began with a simple question: why do so many online classrooms leave students behind? Today our platform supports schools, TAFEs and universities with tools such as screen-reader-friendly lesson viewers, captioned video lessons and flexible quizzes that adapt to each learner. Our team of 40 works in a hybrid model, with a studio in Melbourne's CBD and remote roles across Australia.
-            </p>
-        </section>
 
         <!-- Why work with us section -->
         <section class="benefits" id="benefits">
@@ -120,12 +131,28 @@
             </form>
         </section>
 
+        <!-- Acknowledgement of Country -->
+        <section class="acknowledgement" id="acknowledgement" aria-labelledby="ack-heading">
+            <h2 id="ack-heading">Acknowledgement of Country</h2>
+            <p>
+                LearnLoop acknowledges the Wurundjeri Woi Wurrung and Bunurong peoples of the Eastern Kulin Nation, the Traditional Custodians of the land on which our Melbourne studio stands. We pay our respects to Elders past and present, and to all Aboriginal and Torres Strait Islander peoples who contribute to our work and communities.
+            </p>
+            <h3>What this means for us</h3>
+            <p>
+                An acknowledgement is only meaningful if it shapes what we do. At LearnLoop, we are committed to:
+            </p>
+            <ul>
+                <li>Welcoming applications from Aboriginal and Torres Strait Islander peoples for every role.</li>
+                <li>Designing learning tools that are accessible and inclusive for First Nations learners.</li>
+                <li>Listening to and learning from First Nations voices as we grow as a company.</li>
+            </ul>
+        </section>
     </main>
 
     <footer class="site-footer" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.5rem; text-align: center;">
         <p style="margin: 0;"><a href="https://cos10026-2026-w03.atlassian.net/jira/software/projects/CAWPP1/boards/2/backlog">Jira</a></p>
         <p style="margin: 0;"><a href="https://github.com/Minh1Tuan/Group-Assessment-Project">Github</a></p>
-        <p style="margin: 0;">Contact: <a href="mailto:106215761@student.swin.edu.au">106215761@student.swin.edu.au</a></p>
+        <p style="margin: 0;">Contact: <a href="mailto:LearnLoop@gmail.com">LearnLoop@gmail.com</a></p>
     </footer>
 </body>
 </html>
