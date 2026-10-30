@@ -265,6 +265,10 @@ nav a[aria-current="page"] {
 
 .intro {
   text-align: center;
+  font-weight: bold;
+  background-color: #dba655;
+  border: 1px solid #e8decb;
+  border-radius: 8px;
 }
 
 .form {
@@ -274,6 +278,12 @@ nav a[aria-current="page"] {
     margin-bottom: 20px;
 
 
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
 }
 
 
@@ -298,8 +308,8 @@ nav a[aria-current="page"] {
      display: inline-block;
     justify-self: start;       
     
-    background-color: #e0f2fe ;  
-    color: #0369a1;             
+    background-color: #0369a1 ;  
+    color: white;             
     font-size: 13px;
     font-weight: 700;
     
@@ -315,8 +325,8 @@ nav a[aria-current="page"] {
   display: inline-block;
     justify-self: start;        
     
-    background-color: #e0f2fe;  
-    color: #0369a1;             
+    background-color: #0369a1;  
+    color: white;             
     font-size: 13px;
     font-weight: 700;
     
@@ -333,8 +343,8 @@ nav a[aria-current="page"] {
     gap: 16px;                     
     margin-bottom: 20px;   
     
-    background-color: white;  /* Nền kem nhạt ấm áp */
-    border: 2px solid black;  /* Viền cam đất */
+    background-color: white;  
+    border: 2px solid black;  
     border-radius: 12px;
     padding: 20px 16px;
     margin-bottom: 24px;
@@ -346,8 +356,8 @@ nav a[aria-current="page"] {
 }
 
 .form-submit button[type="submit"] {
-    background-color: #0369a1; 
-    color: #ffffff;             
+    background-color: #dba655;  
+    color: white;             
     font-size: 15px;
     font-weight: 700;
     padding: 12px 24px;         
@@ -357,3 +367,4 @@ nav a[aria-current="page"] {
     transition: all 0.2s ease;  
     box-shadow: 0 4px 6px rgba(217, 119, 6, 0.2); 
 }
+
