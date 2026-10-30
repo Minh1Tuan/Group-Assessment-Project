@@ -237,3 +237,123 @@ nav a[aria-current="page"] {
     animation: none !important;
   }
 }
+
+
+
+/* nhan css apply */
+
+.form-container {
+
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    
+    box-shadow: 0 4px 12px #0369a1 ;
+    border-radius: 8px;
+   
+    
+}
+
+.form-container h1{
+  font-size: 26px;
+    color: #0369a1;            
+    padding-bottom: 12px;      
+    margin-bottom: 20px;       
+    border-bottom: 3px solid #0369a1; 
+    text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+.form {
+    display:grid;
+    grid-template-columns: 1fr;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+
+.form input{
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+
+.form:focus-within {      
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}
+
+
+
+.form > label{
+     display: inline-block;
+    justify-self: start;       
+    
+    background-color: #e0f2fe ;  
+    color: #0369a1;             
+    font-size: 13px;
+    font-weight: 700;
+    
+    padding: 6px 12px;          
+    border: 1px solid #bae6fd;  
+    border-radius: 6px;         
+    
+    letter-spacing: 0.3px;
+    
+}
+
+.form legend {
+  display: inline-block;
+    justify-self: start;        
+    
+    background-color: #e0f2fe;  
+    color: #0369a1;             
+    font-size: 13px;
+    font-weight: 700;
+    
+    padding: 6px 12px;          
+    border: 1px solid #bae6fd;  
+    border-radius: 6px;         
+    
+    letter-spacing: 0.3px;
+}
+
+.formrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 16px;                     
+    margin-bottom: 20px;   
+    
+    background-color: white;  /* Nền kem nhạt ấm áp */
+    border: 2px solid black;  /* Viền cam đất */
+    border-radius: 12px;
+    padding: 20px 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);        
+}
+
+.formrow .form {
+    margin-bottom: 0; 
+}
+
+.form-submit button[type="submit"] {
+    background-color: #0369a1; 
+    color: #ffffff;             
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 24px;         
+    border: none;               
+    border-radius: 8px;         
+    cursor: pointer;            
+    transition: all 0.2s ease;  
+    box-shadow: 0 4px 6px rgba(217, 119, 6, 0.2); 
+}

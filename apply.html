@@ -35,7 +35,8 @@
   </header>
 
   <main id="main" class="apply-page">
-    <h1>Job Application Form</h1>
+    <div class="form-container">
+    <h1>APPLICATION FORM</h1>
     <p class="intro">
       Please fill out the form below to apply for a position at Group 2 Assessment. 
       Ensure all required fields marked with an asterisk (<span class="required">*</span>) are completed.
@@ -44,58 +45,91 @@
     <!-- Application Form -->
     <form action="https://mercury.swin.edu.au/itread/postform.php" method="post" class="application-form">
       
-      <!-- Section 1: Job Selection -->
-      <fieldset>
-        <legend>Job Reference</legend>
-        <p>
-          <label for="job-ref">Job Reference Number <span class="required">*</span></label>
-          <input type="text" id="job-ref" name="job-ref" required pattern="[A-Za-z0-9]{5}" maxlength="5" placeholder="e.g. FED26">
-        </p>
-      </fieldset>
+      <div class="form">
+        <label for="jobref"> Job Reference Number(*)</label>
+        <input
+        type="text"
+        id="jobref"
+        name="jobref"
+        required
+        minlength="5"
+        maxlength="5"
+        placeholder="00000"
+        >
+    </div>
+    <div class="form">
+        <label for="firstname">First Name(*)</label>
+        <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        required
+        maxlength="20"
+        placeholder="Cristiano">
+    </div>
 
-      <!-- Section 2: Personal Details -->
-      <fieldset>
-        <legend>Personal Details</legend>
+    <div class="form">
+        <label for="lastname">Last Name(*)</label>
+        <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        required
+        maxlength="20"
+        placeholder="Ronaldo">
+    </div>
+    <div class="formrow">
+    <div class="form">
+
+        <label for="dayofbirth">Date of Birth(*)</label>
+        <input
+        type="date"
+        id="dayofbirth"
+        name="dayofbirth"
+        required>
+    </div>
+
+    <fieldset class="form">
+
+        <legend>GENDER(*)</legend>
         
-        <p>
-          <label for="first-name">First Name <span class="required">*</span></label>
-          <input type="text" id="first-name" name="first-name" required maxlength="20" pattern="[A-Za-z\s]+">
-        </p>
+        <div class="gender">
+            <label><input type="radio" name="gender" id="male" value="male" checked>Male</label>
+            <label><input type="radio" name="gender" id="female" value="female">Female</label>
+        </div>
+        
 
-        <p>
-          <label for="last-name">Last Name <span class="required">*</span></label>
-          <input type="text" id="last-name" name="last-name" required maxlength="20" pattern="[A-Za-z\s]+">
-        </p>
+    
+    </fieldset>
+    </div>
+    <div class="formrow">
+    <div class="form">
+        <label for="streetaddress">Street Address(*)</label>
+        <input
+        type="text"
+        id="streetaddress"
+        name="streetaddress"
+        required
+        maxlength="40"
+        placeholder="Enter street address">
+    </div>
+    <div class="form">
 
-        <p>
-          <label for="email">Email Address <span class="required">*</span></label>
-          <input type="email" id="email" name="email" required placeholder="name@domain.com">
-        </p>
+    <label for="suburb/town">Suburb/Town(*)</label>
+        <input
+        type="text"
+        id="suburb/town"
+        name="suburb/town"
+        required
+        maxlength="40"
+        placeholder="">
+    </div>
+    
+    <div class="form">
 
-        <p>
-          <label for="phone">Phone Number <span class="required">*</span></label>
-          <input type="tel" id="phone" name="phone" required pattern="[\d\s]{8,12}" placeholder="e.g. 0412 345 678">
-        </p>
-      </fieldset>
-
-      <!-- Section 3: Address -->
-      <fieldset>
-        <legend>Address</legend>
-
-        <p>
-          <label for="street">Street Address <span class="required">*</span></label>
-          <input type="text" id="street" name="street" required maxlength="40">
-        </p>
-
-        <p>
-          <label for="suburb">Suburb / Town <span class="required">*</span></label>
-          <input type="text" id="suburb" name="suburb" required maxlength="20">
-        </p>
-
-        <p>
-          <label for="state">State <span class="required">*</span></label>
-          <select id="state" name="state" required>
-            <option value="">-- Select State --</option>
+        <label for="state">State(*)</label>
+        <select name="state" id="state" required>
+            <option value="">Select State</option>
             <option value="VIC">VIC</option>
             <option value="NSW">NSW</option>
             <option value="QLD">QLD</option>
@@ -104,32 +138,68 @@
             <option value="SA">SA</option>
             <option value="TAS">TAS</option>
             <option value="ACT">ACT</option>
-          </select>
-        </p>
+        </select>
+    </div>
 
-        <p>
-          <label for="postcode">Postcode <span class="required">*</span></label>
-          <input type="text" id="postcode" name="postcode" required pattern="\d{4}" maxlength="4" placeholder="e.g. 3122">
-        </p>
-      </fieldset>
+        <div class="form">
+            <label for="postcode">Postcode(*)</label>
+            <input
+            type="text"
+            id="postcode"
+            name="postcode"
+            required
+            minlength="4"
+            maxlength="4"
+            placeholder="Your Postcode">
+        </div>
+    </div>
 
-      <!-- Section 4: Skills & Cover Letter -->
-      <fieldset>
-        <legend>Application Details</legend>
+        <div class="form">
+            <label for="email">Email(*)</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            maxlength="40"
+            placeholder="example@email.com">
+        </div>
 
-        <p>
-          <label for="skills">Key Skills & Experience</label>
-          <textarea id="skills" name="skills" rows="5" cols="40" placeholder="Briefly describe your relevant skills or experience..."></textarea>
-        </p>
-      </fieldset>
+        <div class="form">
+            <label for="phonenumber">PhoneNumber(*)</label>
+            <input
+            type="text"
+            id="phonenumber"
+            name="phonenumber"
+            required
+            minlength="8"
+            maxlength="12"
+            placeholder="123456789">
+        </div>
 
-      <!-- Form Buttons -->
-      <div class="form-actions">
-        <button type="submit" class="btn-submit">Apply</button>
-        <button type="reset" class="btn-reset">Reset Form</button>
-      </div>
+        <fieldset class="form">
+            <legend>Skills</legend>
+            <div class="skills">
+                <label><input type="checkbox" id="skill1" value="skill1"> Skill 1</label>
+                <label><input type="checkbox" id="skill2" value="skill2"> Skill 2</label>
+                <label><input type="checkbox" id="skill3" value="skill3"> Skill 3</label>
+                <label><input type="checkbox" id="skill4" value="skill4"> Skill 4</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form">
+            <legend>Other Information</legend>
+            <div class="form">
+                <textarea id="otherinfo" name="otherinfo" row="10" placeholder="Enter your other information"></textarea>
+            </div>
+        </fieldset>
+
+        <div class="form-submit">
+            <button type="submit">Submit Application</button>
+        </div>
 
     </form>
+    </div>
   </main>
 
   <!-- Common footer -->
