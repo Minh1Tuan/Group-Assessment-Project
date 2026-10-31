@@ -66,6 +66,13 @@ a:focus-visible {
   font-weight: bold;
 }
 
+/* Logo image in the header */
+.brand img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
 /* Descendant selector: white links in the header */
 .site-header a {
   color: #FFFFFF;
@@ -238,7 +245,7 @@ nav a[aria-current="page"] {
   }
 }
 
-0
+
 
 /* nhan css apply */
 
