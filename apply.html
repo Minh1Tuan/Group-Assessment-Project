@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+  File:         apply.html
+  Project:      COS10026 Assessment 2 – Applied Web Project Part 1
+  Company:      Group 2 Assessment (G04 – Educational Technology)
+  Author:       Vo Nguyen Trung Nhan (106681032)
+  Description:  Job application form for current vacancies.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apply for open positions at Group 2 Assessment.">
+  <meta name="keywords" content="Group 2 Assessment, Job Application, Apply, EdTech">
+  <meta name="author" content="Nguyen Minh Tuan">
+  <title>Job Application | Group 2 Assessment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <p class="brand"><a href="index.html">Group 2 Assessment</a></p>
+    <!-- Common navigation menu -->
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="apply.html" aria-current="page">Apply</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="apply-page">
+    <div class="form-container">
+    <h1>APPLICATION FORM</h1>
+    <p class="intro">
+      Please fill out the form below to apply for a position at Group 2 Assessment. 
+      Ensure all required fields marked with an asterisk (<span class="required">*</span>) are completed.
+    </p>
+
+    <!-- Application Form -->
+    <form action="https://mercury.swin.edu.au/itread/postform.php" method="post" class="application-form">
+      
+      <div class="form">
+        <label for="jobref"> Job Reference Number(*)</label>
+        <input
+        type="text"
+        id="jobref"
+        name="jobref"
+        required
+        minlength="5"
+        maxlength="5"
+        placeholder="00000"
+        >
+    </div>
+    <div class="form">
+        <label for="firstname">First Name(*)</label>
+        <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        required
+        maxlength="20"
+        placeholder="Cristiano">
+    </div>
+
+    <div class="form">
+        <label for="lastname">Last Name(*)</label>
+        <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        required
+        maxlength="20"
+        placeholder="Ronaldo">
+    </div>
+    <div class="formrow">
+    <div class="form">
+
+        <label for="dayofbirth">Date of Birth(*)</label>
+        <input
+        type="date"
+        id="dayofbirth"
+        name="dayofbirth"
+        required>
+    </div>
+
+    <fieldset class="form">
+
+        <legend>GENDER(*)</legend>
+        
+        <div class="gender">
+            <label><input type="radio" name="gender" id="male" value="male" checked>Male</label>
+            <label><input type="radio" name="gender" id="female" value="female">Female</label>
+        </div>
+        
+
+    
+    </fieldset>
+    </div>
+    <div class="formrow">
+    <div class="form">
+        <label for="streetaddress">Street Address(*)</label>
+        <input
+        type="text"
+        id="streetaddress"
+        name="streetaddress"
+        required
+        maxlength="40"
+        placeholder="Enter street address">
+    </div>
+    <div class="form">
+
+    <label for="suburb/town">Suburb/Town(*)</label>
+        <input
+        type="text"
+        id="suburb/town"
+        name="suburb/town"
+        required
+        maxlength="40"
+        placeholder="Your Suburb/Town">
+    </div>
+    
+    <div class="form">
+
+        <label for="state">State(*)</label>
+        <select name="state" id="state" required>
+            <option value="">Select State</option>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+        </select>
+    </div>
+
+        <div class="form">
+            <label for="postcode">Postcode(*)</label>
+            <input
+            type="text"
+            id="postcode"
+            name="postcode"
+            required
+            minlength="4"
+            maxlength="4"
+            placeholder="Your Postcode">
+        </div>
+    </div>
+
+        <div class="form">
+            <label for="email">Email(*)</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            maxlength="40"
+            placeholder="example@email.com">
+        </div>
+
+        <div class="form">
+            <label for="phonenumber">PhoneNumber(*)</label>
+            <input
+            type="text"
+            id="phonenumber"
+            name="phonenumber"
+            required
+            minlength="8"
+            maxlength="12"
+            placeholder="123456789">
+        </div>
+
+        <fieldset class="form">
+            <legend>Skills</legend>
+            <div class="skills">
+                <label><input type="checkbox" id="skill1" value="skill1">HTML5 / CSS3</label>
+                <label><input type="checkbox" id="skill2" value="skill2">JavaScript</label>
+                <label><input type="checkbox" id="skill3" value="skill3">Web Accessibility</label>
+                <label><input type="checkbox" id="skill4" value="skill4">Git & Jira</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form">
+            <legend>Other Information</legend>
+            <div class="form">
+                <textarea id="otherinfo" name="otherinfo" row="10" placeholder="Enter your other information"></textarea>
+            </div>
+        </fieldset>
+
+        <div class="form-submit">
+            <button type="submit">SUBMIT</button>
+        </div>
+
+    </form>
+    </div>
+  </main>
+
+  <!-- Common footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Group 2 Assessment. Contact: <a href="mailto:106681032@student.swin.edu.au">106681032@student.swin.edu.au</a></p>
+  </footer>
+</body>
+</html>
