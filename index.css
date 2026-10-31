@@ -1,4 +1,10 @@
-/* index.css - homepage styles (load after styles.css) */
+/*
+  File:    index.css
+  Author:  Tran Dang Le Quan (106215761)
+  Purpose: Homepage-only styles (load after styles.css)
+  Acknowledgements:
+    - Styles drafted with help from Claude Sonnet 5.5 (Anthropic GenAI), then reviewed and edited by the author.
+*/
 
 /* Page container */
 #main-content {
